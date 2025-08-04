@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <h2>QuickConvert</h2>
+        </div>
+
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#converter">Converter</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="box" id="home">
+        <h1>Welcome to QuickConvert!</h1>
+        <p>Convert any currency instantly with real-time exchange rates.
+        Start converting now and stay updated with the latest rates!</p>
+    </div>
+
+    <div class="container" id="converter">
+        <h2>Currency converter</h2>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input value="100" type="text">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select name="from">
+                            <option value="USD">USD</option>
+                            <option value="INR">INR</option>
+                            <option value="AUD">AUD</option>
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                        <select name="to">
+                            <option value="USD">USD</option>
+                            <option value="INR" selected>INR</option>
+                            <option value="AUD">AUD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p class="msg">1 USD = 80 INR</p>
+            <button type="button">Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <div class="box" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to QuickConvert, your go-to platform for quick and reliable currency conversion.
+        We designed this tool to help students, travelers, freelancers, and businesses get accurate exchange rates in seconds.
+        <br>
+        Our goal is to simplify global currency exchange by providing :</p>
+        <ul>
+            <li>Real-time conversion rates</li>
+            <li>A user-friendly and responsive interface</li>
+            <li>Support for major global currencies</li>
+        </ul>
+        <p>Whether you're budgeting for an international trip or managing online payments, QuickConvert makes currency conversion fast and easy.</p>
+    </div>
+
+    <div class="box" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions, feedback, or feature suggestions? We'd love to hear from you!</p>
+        <p>Email: <a href="mailto:mohdkashifkhan079@gmail.com">mohdkashifkhan079@gmail.com</a></p>
+        <p>Phone: <a href="tel:8545852533">+91 8545852533</a></p>
+        <p>Location: Lucknow, Uttar Pradesh</p>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2025 | All right reserved.</p>
+    </footer>
+
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
